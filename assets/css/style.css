@@ -18,6 +18,11 @@ p {
   font-family: "Raleway", sans-serif;
 }
 
+li {
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 10px;
+}
+
 a {
   color: #777;
   text-decoration: none;

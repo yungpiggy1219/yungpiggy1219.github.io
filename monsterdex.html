@@ -72,6 +72,7 @@
                   <h3 class="h3">MonsterDex</h3>
                   <p class="mb-4">
                     <span class="text-muted">iOS App Design</span>
+                    <span class="text-muted">March 2023 - May 2023</span>
                   </p>
 
                   <div class="mb-5">
@@ -87,10 +88,16 @@
                   <ul class="list-unstyled list-line mb-5">
                     <li>UX Design</li>
                     <li>UI Design</li>
-                    <li>Logo</li>
                   </ul>
 
-                  <p><a href="#" class="readmore">Visit Website</a></p>
+                  <p>
+                    <a
+                      href="https://apps.apple.com/us/app/monsterdex/id6447112284?platform=iphone"
+                      target="_blank"
+                      class="readmore"
+                      >Visit App Store</a
+                    >
+                  </p>
                 </div>
               </div>
             </div>
@@ -100,7 +107,7 @@
       <section class="section">
         <div class="container mt-4">
           <div class="row mb-4 align-items-center">
-            <h2>Problem</h2>
+            <h2>/Problem</h2>
             <p>
               The motivation behind embarking on this project originates from my
               frustration in searching for a reliable Pokedex app on my mobile
@@ -127,14 +134,13 @@
       <section class="section">
         <div class="container mt-4">
           <div class="row mb-4 align-items-center">
-            <h2>Design Process</h2>
+            <h2>/Design Process</h2>
             <p>
               As part of the process, I reviewed the designs of existing PokéDex
               websites and apps. This helped me identify design strengths and
               weaknesses and served as a foundation for developing our unique
               design.
             </p>
-
             <p>
               I used these insights to create initial wireframes and prototypes.
               Through an iterative process, we continuously improved the design
@@ -142,20 +148,7 @@
               refine the interface and ensure it aligned with user preferences.
             </p>
           </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container mt-4">
           <div class="row mb-4 align-items-center">
-            <h2>Research</h2>
-            <p>
-              Market research revealed a growing demand for team-building and
-              strategy tools among Pokémon players. The trend indicated an
-              opportunity to create a comprehensive app that catered to both the
-              casual and hardcore segments of the Pokémon community.
-            </p>
-
             <h4>Competitor Analysis</h4>
             <p>
               I evaluated the user experiences of competitors' products to
@@ -169,7 +162,13 @@
               <b>convoluted user flows</b>. These problems created a demand for
               a more reliable and aesthetically pleasing Pokédex app.
             </p>
-            <img src="assets/img/img_1_big.jpg" alt="Image" class="img-fluid" />
+            <div class="mb-4">
+              <img
+                src="assets/img/compReview.png"
+                alt="Image"
+                class="img-fluid"
+              />
+            </div>
             <p>
               The poor information architecture in these apps often led to a
               frustrating user experience. Users found it difficult to locate
@@ -180,6 +179,219 @@
               confusing categories. This not only hampered their gameplay but
               also made the overall experience less enjoyable.
             </p>
+            <p>
+              Moreover, the convoluted user flows in these existing Pokédex apps
+              exacerbated the problem. Simple tasks like searching for a
+              Pokémon, viewing its abilities, or accessing its location in the
+              game world became time-consuming and counterintuitive. Players
+              often found themselves lost in a maze of menus, and the lack of a
+              logical progression in their interactions with the app made it
+              challenging to achieve their objectives efficiently.
+            </p>
+            <div class="row">
+              <div class="col-md-2">
+                <img src="assets/img/comp1.png" alt="Image" class="img-fluid" />
+              </div>
+              <div class="col-md-2">
+                <img src="assets/img/comp2.png" alt="Image" class="img-fluid" />
+              </div>
+              <div class="col-md-2">
+                <img src="assets/img/comp3.png" alt="Image" class="img-fluid" />
+              </div>
+              <div class="col-md-2">
+                <img src="assets/img/comp4.png" alt="Image" class="img-fluid" />
+              </div>
+              <div class="col-md-2">
+                <img src="assets/img/comp5.png" alt="Image" class="img-fluid" />
+              </div>
+              <div class="col-md-2">
+                <img src="assets/img/comp6.png" alt="Image" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+          <div class="row mb-4 align-items-center">
+            <h4>User Archetypes</h4>
+            <p>
+              I created user archetypes to help me understand the needs and
+              motivations of our target audience. This allowed me to identify
+              the key features and functionalities that would be most valuable
+              to our users. identified several key players in the Pokémon app
+              space. For example, "PokéGuide" offered comprehensive information
+              on Pokémon, types, and evolutions but suffered from an outdated
+              user interface and frequent crashes. This analysis guided our
+              design decisions by highlighting the need for a reliable and
+              visually appealing app. Based on our competitor research, we
+              identified two distinct user categories:
+            </p>
+            <div class="col-md-3">
+              <img src="assets/img/avatar1.png" alt="Image" class="img-fluid" />
+            </div>
+            <div class="col-md-3">
+              <h5>Casual Player</h5>
+              <p>These users seek basic information, including:</p>
+              <ul>
+                <li>View Pokémon by types or generation</li>
+                <li>Finding the location of specific Pokémon</li>
+                <li>Understanding how and when a Pokémon evolves</li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <img src="assets/img/avatar2.png" alt="Image" class="img-fluid" />
+            </div>
+            <div class="col-md-3">
+              <h5>Hardcore Player</h5>
+              <p>
+                These dedicated players aspire to excel in their Pokémon journey
+                by accessing information such as:
+              </p>
+              <ul>
+                <li>
+                  Tracking their PokéDex collection progress in their current
+                  game
+                </li>
+                <li>
+                  Utilizing a team builder tool to assemble the most effective
+                  team
+                </li>
+                <li>Gaining insights into hatching mechanics</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row mb-4 align-items-center">
+            <h4>Information Architecture</h4>
+            <img src="assets/img/monsterIA.png" alt="Image" class="img-fluid" />
+          </div>
+          <div class="row mb-4 align-items-center">
+            <h4>Wireframing</h4>
+            <img src="assets/img/monsterWF.png" alt="Image" class="img-fluid" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container mt-4">
+          <div class="row mb-4 align-items-center">
+            <h2>/Challenges</h2>
+            <p>
+              A significant challenge during the project was aligning our design
+              vision with the technical feasibility. Open and honest
+              communication between the UI/UX Designer (myself) and the iOS
+              Developer was essential in finding common ground. We resolved this
+              by prioritizing features based on user needs and technical
+              constraints.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container mt-4">
+          <div class="row mb-4 align-items-center">
+            <h2>/Lessons Learned</h2>
+            <p>
+              In leading UX/UI design for our iOS app using Figma, I gained key
+              insights that shaped my approach:
+            </p>
+            <ol>
+              <li>
+                <b>Team Collaboration:</b> Worked closely with a partner,
+                leveraging strengths for a cohesive app. Emphasized open
+                communication for aligning creative visions.
+              </li>
+              <li>
+                <b>User-Centered Design:</b> Prioritized user research,
+                wireframes, and prototyping for iterative improvements. Resulted
+                in a refined design based on valuable user feedback.
+              </li>
+              <li>
+                <b>Attention to Detail:</b> Emphasized meticulous refinement and
+                adherence to design guidelines for consistent and intuitive
+                visual elements. Contributed to a seamless and delightful user
+                experience.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container mt-4">
+          <div class="row mb-4 align-items-center">
+            <h2>/Future Directions</h2>
+
+            <p>
+              In our ongoing efforts to ensure the sustainability and continuous
+              improvement of the app, we are planning a strategic implementation
+              of following features:
+            </p>
+            <ol>
+              <li>
+                <b>Non-Intrusive Ads:</b>
+                <ul>
+                  <li>Strategic implementation for sustainability.</li>
+                  <li>Prioritize seamless user experience.</li>
+                  <li>
+                    Balance functionality and advertising for financial
+                    viability.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <b> User Engagement:</b>
+                <ul>
+                  <li>Deep commitment to user feedback.</li>
+                  <li>MonsterDex community integral to development.</li>
+                  <li>
+                    Actively listen and collaborate based on evolving user
+                    expectations.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <b> Team-Building Feature:</b>
+                <ul>
+                  <li>Resources dedicated for enhancement.</li>
+                  <li>
+                    In-depth stat comparisons, personalized move set
+                    recommendations, and advanced synergy analysis.
+                  </li>
+                  <li>
+                    Provide users with a robust toolkit for crafting ideal
+                    Pokémon squads.
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container mt-4">
+          <div class="row mb-4 align-items-center">
+            <h2>/Mockup</h2>
+            <img
+              src="assets/img/monsterdex1.png"
+              alt="Image"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container mt-4">
+          <div class="row mb-4 align-items-center">
+            <h2>/App Store Video</h2>
+            <iframe
+              width="750"
+              height="600"
+              src="https://www.youtube.com/embed/idZxbDAjyzI?si=-4Q5KxZ8jSpFztgd"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </section>
@@ -191,9 +403,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-6">
-            <p class="mb-1">
-              &copy; Copyright MyPortfolio. All Rights Reserved
-            </p>
+            <p class="mb-1">👾 2023 ©️ Made with ❤️ by Yung-Chu Chuang 🥰</p>
             <div class="credits">
               <!--
             All the links in the footer should remain intact.
@@ -205,10 +415,14 @@
             </div>
           </div>
           <div class="col-sm-6 social text-md-end">
-            <a href="#"><span class="bi bi-twitter"></span></a>
-            <a href="#"><span class="bi bi-facebook"></span></a>
-            <a href="#"><span class="bi bi-instagram"></span></a>
-            <a href="#"><span class="bi bi-linkedin"></span></a>
+            <a href="https://github.com/yungpiggy1219" target="_blank"
+              ><span class="bi bi-github"></span
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/yung-chu-chuang/"
+              target="_blank"
+              ><span class="bi bi-linkedin"></span
+            ></a>
           </div>
         </div>
       </div>
