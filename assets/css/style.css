@@ -46,6 +46,10 @@ h6,
   padding: 7rem 0;
 }
 
+.aboutImage {
+  width: 70%;
+}
+
 .filters a {
   text-decoration: none;
   color: #000;
