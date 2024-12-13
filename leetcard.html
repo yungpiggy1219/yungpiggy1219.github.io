@@ -101,7 +101,7 @@
                 data-aos-delay="100"
               >
                 <div class="sticky-content">
-                  <h3 class="h3">LeetCard</h3>
+                  <h3 class="h3">LeetCard: AI-powered Flashcard</h3>
                   <p class="mb-4">
                     <span class="text-muted">Cross Platform App</span> <br />
                     <span class="text-muted">January 2024 - March 2024</span>
@@ -110,10 +110,12 @@
                   <div class="mb-5">
                     <p>
                       The LeetCard app project aimed to fill a gap in the
-                      existing flashcard apps and Leedcode study tools. As a
-                      UI/UX Designer, my role was to create a user-friendly and
-                      visually appealing study app specifically made for
-                      software engineers.
+                      existing flashcard apps and Leedcode study tools.
+                    </p>
+                    <p>
+                      As a UI/UX Designer, I focused on designing an intuitive
+                      and visually engaging study app tailored to streamline the
+                      learning process for software engineers.
                     </p>
                   </div>
 
@@ -147,42 +149,47 @@
       </section>
 
       <section class="section">
-        <div class="container mt-4">
-          <div class="row mb-4 align-items-center px-5">
-            <h2>/Problem</h2>
-            <p>
-              Our project begin with the developer's own struggles with LeetCode
-              while job hunting. Recognizing the need for a tool to
-              <b>quickly refresh</b> memories on problems they've solved, we
-              created a solution to help developers prepare efficiently for
-              technical interviews.
-            </p>
-
-            <p>
-              Currently, many individuals rely on Excel or spreadsheets to
-              organize and track the LeetCode problems they've solved. However,
-              these methods often lack efficiency and can be cumbersome to
-              manage effectively. Our solution aims to streamline this process
-              by providing a dedicated platform specifically tailored for
-              organizing and tracking LeetCode problems, offering a more
-              user-friendly and efficient alternative to traditional
-              spreadsheet-based methods.
-            </p>
+        <div class="container mt-4 justify-content-center">
+          <div class="row m-5">
+            <img
+              src="assets/img/leetcard_problems.png"
+              alt="Image"
+              class="img-fluid"
+            />
+          </div>
+          <div class="row cs-text m-5 align-items-center">
+            <div>
+              <h6>/Problem</h6>
+              <h4>Technical Interview Prep Can Be Overwhelming...</h4>
+              <p>
+                Many developers struggle to efficiently refresh their memory on
+                solved problems while preparing for technical interviews. This
+                challenge is particularly pronounced during job hunting, where
+                time is of the essence, and organization is critical.
+              </p>
+              <p>
+                A common approach involves using Excel or spreadsheets to track
+                and manage solved LeetCode problems. However, these tools are
+                often inefficient, cumbersome, and not optimized for this
+                specific purpose, leading to frustration and wasted time.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="section">
         <div class="container mt-4 px-5">
-          <div class="row mb-4 align-items-center">
+          <div class="row m-5 align-items-center">
             <div class="row mb-5">
-              <h2>/Design Process</h2>
+              <h6>/Design Process</h6>
+              <h4>LeetCard Embraces a Lean UX Approach</h4>
               <p>
-                The design process for LeetCard follows a
-                <b>lean ux approach</b>. I began by researching whether people
-                who use Leetcode would like to use a flashcard app to help them
-                study. This help me quickly evaluate the idea and decide whether
-                to move forward with the project.
+                The design process for LeetCard follows a lean UX methodology.
+                It began with researching whether users of LeetCode would find
+                value in a flashcard app to enhance their study process. This
+                approach allowed me to quickly validate the concept and
+                determine the feasibility of moving forward with the project.
               </p>
               <img
                 src="assets/img/LeanUXDesignProcess.png"
@@ -193,21 +200,26 @@
 
             <div class="row mb-5">
               <h3 style="background-color: #ffc7c2">Think</h3>
+            </div>
+
+            <div class="row mb-5 align-items-center">
+              <h5>Competitive Analysis</h5>
               <p>
-                I conducted a competitive analysis to identify the strengths and
-                weaknesses of existing LeetCode study tools. This helped me
-                understand the market landscape and identify opportunities for
-                improvement. I found that users were crafting their own
-                solutions by combining different available services, or build
-                their own tools, rather than having direct competitors. I
-                identified the key components users were utilizing. I then
-                synthesized the most effective features from these services to
-                create a cohesive user experience for our product.
+                To understand the market landscape, I conducted a comprehensive
+                competitive analysis of existing LeetCode study tools. This
+                analysis allowed me to identify their strengths and weaknesses
+                while uncovering opportunities for improvement. I discovered
+                that many users were crafting their own solutions by combining
+                different services or building their own tools, as there were no
+                direct competitors fully addressing their needs. By analyzing
+                the key components users relied on, I synthesized the most
+                effective features from these solutions to create a cohesive and
+                user-centric experience for our product.
               </p>
             </div>
 
             <div class="row mb-5 align-items-center">
-              <h4>User Persona</h4>
+              <h5>User Persona</h5>
               <p>
                 I created a persona to represent our target user, a software
                 engineer who is preparing for technical interviews. This persona
@@ -222,16 +234,67 @@
               />
             </div>
 
+            <div class="row mb-5 align-items-center">
+              <h5>Design Decisions</h5>
+              <div>
+                <p>
+                  Guided by the competitive analysis and user persona, we
+                  incorporated specific design features to address the target
+                  user's goals and pain points:
+                </p>
+
+                <div>
+                  <p><b>Profile Page:</b></p>
+                  <ul>
+                    <li>
+                      Provides data security by allowing users to save progress
+                      securely
+                    </li>
+                    <li>
+                      Offers a personalized experience, enabling users to track
+                      their performance
+                    </li>
+                    <li>
+                      Keeps users motivated by showcasing their progress and
+                      achievements
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <p><b>Bottom Navigation Bar:</b></p>
+                  <ul>
+                    <li>
+                      Implements a familiar and intuitive navigation layout for
+                      ease of use
+                    </li>
+                    <li>
+                      Enables efficient switching between key tasks like
+                      managing study plans and reviewing flashcards
+                    </li>
+                    <li>
+                      Reduces friction and enhances usability, especially for
+                      time-sensitive users
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
             <div class="row mb-5">
               <h3 style="background-color: #aff4c6">Make</h3>
+            </div>
+            <div class="row mb-5 align-items-center">
+              <h5>MVP Development</h5>
               <p>
-                To keep the MVP simple, I focused on the core features that
-                would provide the most value to users. The original plan was to
-                include only the Study Plan and All Cards, however, as the
-                project progressed, the developer decided a Profile page is
-                critical for the MVP. This addition ensures users can securely
-                save their data, mitigating concerns about content loss and
-                enhancing the overall platform experience.
+                To simplify the MVP and maximize user value, I focused on
+                incorporating core features that addressed the primary needs of
+                our target audience. Initially, the plan included only the
+                "Study Plan" and "All Cards" sections. However, as the project
+                progressed, the team identified the critical importance of a
+                "Profile Page." This addition allows users to securely save
+                their data, alleviating concerns about potential content loss
+                while enhancing the overall platform experience.
               </p>
               <img
                 src="assets/img/leetcardIA.png"
@@ -241,16 +304,16 @@
             </div>
 
             <div class="row mb-5">
-              <h4>Design System</h4>
+              <h5>Design System</h5>
               <p>
-                This design system was built from the ground up without relying
-                on pre-existing UI kits or libraries, ensuring a unique and
-                tailored visual identity for the project. It was developed to
-                maintain future consistency, scalability, and efficiency across
-                all components and platforms. By providing clear guidelines and
-                reusable elements, this system enables seamless collaboration
-                and helps the product evolve without compromising on quality or
-                coherence.
+                The design system for this project was crafted entirely from
+                scratch, without relying on pre-existing UI kits or libraries.
+                This approach ensured a unique and tailored visual identity that
+                aligned with the app's goals. The system was designed with
+                scalability, consistency, and efficiency in mind, providing
+                clear guidelines and reusable components. This foundation
+                supports seamless collaboration and allows the product to evolve
+                while maintaining quality and coherence.
               </p>
               <iframe
                 style="border: 1px solid rgba(0, 0, 0, 0.1)"
@@ -262,15 +325,15 @@
             </div>
 
             <div class="row mb-5">
-              <h4>Mock-up</h4>
+              <h5>Prototypes and Navigation Design</h5>
               <p>
-                With the MVP in mind, I created prototypes to visualize the
-                app's layout and functionality. With minor navication changes, I
-                decided to utalize a bottom navigation bar to provide a more
-                intuitive user experience. This design choice was made to ensure
-                users could easily navigate between Study Plan and All Cards in
-                case they wanted to switch between the two frequently when
-                organizing their study plans.
+                Keeping the MVP in mind, I developed prototypes to visualize the
+                app's layout and functionality. Based on user needs, I
+                implemented a bottom navigation bar to create a more intuitive
+                experience. This decision was made to facilitate seamless
+                navigation between the "Study Plan" and "All Cards" sections,
+                particularly for users who frequently switch between these
+                features while organizing their study plans.
               </p>
               <iframe
                 style="border: 1px solid rgba(0, 0, 0, 0.1)"
@@ -283,59 +346,80 @@
 
             <div class="row mb-5">
               <h3 style="background-color: #bde3ff">Check</h3>
+            </div>
+            <div class="row mb-5 align-items-center">
+              <h5>Launch and Post-Release Analysis</h5>
               <p>
-                We decided to launch the app without conducting user testing,
-                opting instead to rely on monitoring user usage data for
-                insights to drive improvements. While traditional user testing
-                offers valuable feedback, we believed that releasing the product
-                to the market swiftly would provide us with real-world usage
-                data and a more comprehensive understanding of user behaviors
-                and preferences. By closely analyzing user interactions and
-                feedback post-launch, we are committed to iteratively refining
-                the app to enhance its usability and functionality, ensuring a
+                To expedite the release process, we launched the app without
+                conducting traditional user testing. Instead, we focused on
+                gathering real-world usage data to inform improvements. While
+                user testing can provide valuable feedback, we prioritized swift
+                market entry to gain a more authentic and comprehensive
+                understanding of user behaviors and preferences. By monitoring
+                user interactions and collecting feedback post-launch, we
+                committed to an iterative process of refining the app, ensuring
+                it meets the needs of our target audience and delivers a
                 user-centric experience.
               </p>
-
               <p>
-                On the day of our iOS version launch, our developer took to
-                Reddit to share news about our product, and the response was
-                overwhelmingly positive, garnering over 300 upvotes within a
-                single day. Many users requested an Android version, which is
-                still a work in progress. Additionally, interest in a web
-                version confirmed alignment with our future plans.
+                The iOS version launch generated an overwhelmingly positive
+                response. Our developer shared the product on Reddit, where it
+                received over 300 upvotes within a single day. This feedback
+                highlighted strong demand for the app, with many users
+                requesting an Android version, which is currently in
+                development. Additionally, the expressed interest in a web
+                version validated our roadmap and aligned with our future plans
+                for platform expansion.
               </p>
               <img
-                src="assets/img/leetcardAnalytics.jpg"
+                src="assets/img/leetcardIA.png"
                 alt="Image"
                 class="img-fluid"
               />
             </div>
+
+            <img
+              src="assets/img/leetcardAnalytics.jpg"
+              alt="Image"
+              class="img-fluid"
+            />
           </div>
         </div>
       </section>
 
       <section class="section">
-        <div class="container mt-4">
-          <div class="row mb-4 align-items-center px-5">
-            <h2>/Future Directions</h2>
-
+        <div class="container mt-4 justify-content-center">
+          <div class="row mb-4 align-items-center px-5 cs-text">
+            <h6>/Future Directions</h6>
+            <h4>How Can We Improve Retention and Engagement?</h4>
             <p>
-              Although the number of downloads was way higher than expected, the
-              active users were lower than we anticipated. We are currently
-              working on improving the app's retention rate by adding more
-              features and enhancing the user experience. We are also planning
-              to conduct user interviews to gather feedback and insights to
-              further refine the app and ensure it meets the needs of our target
-              users.
+              While the app's launch was a success, achieving over 1,000
+              downloads in the first two weeks and receiving praise for its
+              aesthetic design and intuitive UI, we noticed that active user
+              engagement fell short of expectations.
             </p>
-
             <p>
-              The app had a successful launch, with over 1,000 downloads within
-              the first two weeks. The app has been well-received by users, with
-              many expressing their appreciation for the aesthetic design and
-              user-friendly UI. We are excited to continue improving the app and
-              expanding its features to provide a comprehensive study tool for
-              software engineers.
+              To address this, we are focusing on the following future
+              directions:
+            </p>
+            <p>
+              <b>1. Enhancing Retention:</b><br />
+              - Adding features to improve usability and encourage regular app
+              usage.<br />
+              - Refining the user experience based on behavioral data and user
+              feedback.
+            </p>
+            <p>
+              <b>2. Gathering Insights:</b><br />
+              - Conducting user interviews to understand pain points and unmet
+              needs.<br />
+              - Iteratively updating the app to better align with user
+              expectations.
+            </p>
+            <p>
+              With these initiatives, we aim to create a more comprehensive
+              study tool tailored to the needs of software engineers and ensure
+              sustained user engagement.
             </p>
           </div>
         </div>
