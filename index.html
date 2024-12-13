@@ -603,6 +603,27 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Google Analytics Event Listeners -->
+  <script>
+    document.getElementById("Logitech-Box").addEventListener("click", function() {
+        gtag('event', 'button_click', {
+            'event_category': 'Button',
+            'event_label': 'Logitech Headset',
+            'value': 1
+        });
+        console.log("Event sent to Google Analytics");
+    });
+
+    document.getElementById("Liquid-Cat-Box").addEventListener("click", function() {
+        gtag('event', 'button_click', {
+            'event_category': 'Button',
+            'event_label': 'Liquid Cat Game',
+            'value': 1
+        });
+        console.log("Event sent to Google Analytics");
+    });
+</script>
 </body>
 
 </html>
