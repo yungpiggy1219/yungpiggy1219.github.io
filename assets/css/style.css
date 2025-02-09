@@ -42,9 +42,33 @@ h6,
   font-family: "Raleway", sans-serif;
 }
 
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 35px;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
 h6 {
+  font-size: 14px;
   text-transform: uppercase;
-  color: #FF007A;
+  font-weight: 600;
+  margin-bottom: 35px;
+  color: #ff007a;
 }
 
 .section {
@@ -187,14 +211,6 @@ h6 {
 
 .testimonial-wrap .testimonial blockquote p {
   font-size: 20px;
-}
-
-.h3 {
-  font-size: 20px;
-}
-
-.h4 {
-  font-size: 16px;
 }
 
 .heading {
