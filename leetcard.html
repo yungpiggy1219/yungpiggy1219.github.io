@@ -192,20 +192,41 @@
         </div>
       </section>
 
-      <section>
+      <section class="section">
         <div class="container mt-4 px-5">
           <div class="row m-5 align-items-center">
             <div class="row mb-5">
-              <h3>What we already know</h3>
-              <ul>
+              <h3>What we already know:</h3>
+              <ul class="list-unstyled list-line mb-5">
                 <li>
-                  ✔ Most developers use spreadsheets or note-taking apps to
-                  track solved problems. ✔ These tools are not optimized for
-                  quick recall, especially under time pressure. ✔ Reviewing past
-                  problems is crucial for reinforcing problem-solving
-                  strategies.
+                  Developers can only study LeetCode when they have access to a
+                  computer, making it hard to review problems on the go.
+                </li>
+                <li>
+                  Reviewing past problems is crucial for reinforcing
+                  problem-solving strategies.
+                </li>
+                <li>
+                  Many developers use spreadsheets or note-taking apps to track
+                  solved problems.
                 </li>
               </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container mt-4 px-5">
+          <div class="row m-5 align-items-center">
+            <div class="row mb-5">
+              <h6>Hypothesis</h6>
+              <h3 class="text-center" style="line-height: 2">
+                "If we create a tool that allows users to study anytime,
+                anywhere, they will have more opportunities to practice and
+                reinforce problem-solving strategies, making their interview
+                preparation more efficient."
+              </h3>
             </div>
           </div>
         </div>
@@ -232,45 +253,80 @@
             </div>
 
             <div class="row mb-5">
-              <h3 style="background-color: #ffc7c2">Think</h3>
+              <h3
+                class="px-3 py-2"
+                style="background-color: #ffc7c2; border-radius: 10px"
+              >
+                Think
+              </h3>
             </div>
             <div class="row mb-5">
-              <h4 style="background-color: #ffc7c2">
-                Understanding the Problem Space
+              <h4 style="background-color: #ffc7c2; border-radius: 10px">
+                Research & Early Validation
               </h4>
             </div>
 
             <div class="row mb-5 align-items-center">
-              <h5>Task Analysis</h5>
-              <p>
-                To understand the user's workflow and identify key tasks, I
-                conducted a task analysis of the LeetCode study process. This
-                analysis helped me identify the primary activities users engage
-                in while preparing for technical interviews. By breaking down
-                the study process into discrete tasks, I gained insights into
-                the user's needs and pain points, informing the design of the
-                app's core features.
-              </p>
-            </div>
-
-            <div class="row mb-5 align-items-center">
-              <h5>Competitive Analysis</h5>
+              <h4>Competitive Analysis</h4>
               <p>
                 To understand the market landscape, I conducted a comprehensive
                 competitive analysis of existing LeetCode study tools. This
                 analysis allowed me to identify their strengths and weaknesses
-                while uncovering opportunities for improvement. I discovered
-                that many users were crafting their own solutions by combining
-                different services or building their own tools, as there were no
-                direct competitors fully addressing their needs. By analyzing
-                the key components users relied on, I synthesized the most
-                effective features from these solutions to create a cohesive and
-                user-centric experience for our product.
+                while uncovering opportunities for improvement. Although there
+                were no direct competitors to LeetCard, I found many indirect
+                competitors that offered similar features.
+              </p>
+              <h5>Indirect Competitors:</h5>
+              <ul class="list-unstyled list-line mb-5">
+                <li>
+                  LeetCode: Offers a vast collection of algorithmic problems for
+                  practice
+                </li>
+                <li>
+                  NeetCode: Provides a better structured and refined set of
+                  LeetCode problems
+                </li>
+                <li>
+                  Notion: Used by many developers to track solved problems
+                </li>
+                <li>
+                  Google Sheets and Excel: Used by many developers to track
+                  solved problems
+                </li>
+                <li>Quizlet: Offers a flashcard app for studying</li>
+              </ul>
+              <p>
+                I discovered that many users were crafting their own solutions
+                by combining different services or building their own tools, as
+                there were no direct competitors fully addressing their needs.
+                By analyzing the key components users relied on, I identified
+                essential features to incorporate into our product. This
+                informed the next step: conducting a task analysis to understand
+                the user's workflow and key tasks.
               </p>
             </div>
 
             <div class="row mb-5 align-items-center">
-              <h5>User Persona</h5>
+              <h4>User Journey</h4>
+              <p>
+                To understand the user’s experience and challenges in preparing
+                for technical interviews, I mapped out a user journey of the
+                LeetCode study process. This journey revealed key pain points,
+                such as the inefficiency of manually tracking and recalling
+                solved problems. By analyzing each stage—from solving problems
+                to reviewing past solutions—I gained insights into user
+                frustrations and opportunities for improvement, which directly
+                informed the design of LeetCard’s core features.
+              </p>
+              <img
+                src="assets/img/leetcardUJM.png"
+                alt="Image"
+                class="img-fluid"
+              />
+            </div>
+
+            <div class="row mb-5 align-items-center">
+              <h4>User Persona</h4>
               <p>
                 I created a persona to represent our target user, a software
                 engineer who is preparing for technical interviews. This persona
@@ -285,55 +341,70 @@
               />
             </div>
 
-            <div class="row mb-5 align-items-center">
-              <h5>Design Decisions</h5>
-              <div>
-                <p>
-                  Guided by the competitive analysis and user persona, we
-                  incorporated specific design features to address the target
-                  user's goals and pain points:
-                </p>
-
-                <div>
-                  <p><b>Profile Page:</b></p>
-                  <ul>
-                    <li>
-                      Provides data security by allowing users to save progress
-                      securely
-                    </li>
-                    <li>
-                      Offers a personalized experience, enabling users to track
-                      their performance
-                    </li>
-                    <li>
-                      Keeps users motivated by showcasing their progress and
-                      achievements
-                    </li>
-                  </ul>
-                </div>
-
-                <div>
-                  <p><b>Bottom Navigation Bar:</b></p>
-                  <ul>
-                    <li>
-                      Implements a familiar and intuitive navigation layout for
-                      ease of use
-                    </li>
-                    <li>
-                      Enables efficient switching between key tasks like
-                      managing study plans and reviewing flashcards
-                    </li>
-                    <li>
-                      Reduces friction and enhances usability, especially for
-                      time-sensitive users
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
             <div class="row mb-5">
-              <h3 style="background-color: #aff4c6">Make</h3>
+              <h4 style="background-color: #ffc7c2; border-radius: 10px">
+                Defining Key Areas for Improvement
+              </h4>
+              <p>
+                Competitive analysis, user journey mapping, and interviews
+                revealed major challenges in how developers track and review
+                LeetCode problems. Spreadsheets and notes are inefficient for
+                quick recall and disrupts learning. Additionally, studying is
+                restricted to desktop access, limiting flexibility. These
+                insights shaped the core design features to enhance
+                accessibility, recall efficiency, and engagement.
+              </p>
+              <h4 class="mb-4">Key Opportunity Areas:</h4>
+              <h5>1.  Enable Study on the Go</h5>
+              <ul class="list-unstyled list-line mb-5">
+                <li>
+                  A mobile-first experience allows users to review and reinforce
+                  problem-solving strategies on the go, fitting study sessions
+                  into daily routines
+                </li>
+              </ul>
+
+              <h5>
+                2.  Replace Manual Problem Searching with Randomized Recall
+              </h5>
+              <ul class="list-unstyled list-line mb-5">
+                <li>
+                  Instead of manually selecting problems to review, a quiz-like
+                  recall mode can surface problems dynamically, reducing
+                  decision fatigue
+                </li>
+                <li>
+                  Spaced repetition can help reinforce weaker areas by
+                  resurfacing problems strategically
+                </li>
+              </ul>
+
+              <h5>3.  Focus on Solutions with Predefined LeetCode Problems</h5>
+              <ul class="list-unstyled list-line mb-5">
+                <li>
+                  The app will predefine LeetCode problems, so users only need
+                  to input their solutions—eliminating manual entry
+                </li>
+                <li>
+                  If users don’t have a solution, AI-powered assistance can
+                  provide hints or generate example solutions to aid learning
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container mt-4 px-5">
+          <div class="row m-5 align-items-center">
+            <div class="row mb-5">
+              <h3
+                class="px-3 py-2"
+                style="background-color: #aff4c6; border-radius: 10px"
+              >
+                Make
+              </h3>
             </div>
             <div class="row mb-5 align-items-center">
               <h5>MVP Development</h5>
@@ -394,10 +465,22 @@
                 allowfullscreen
               ></iframe>
             </div>
+          </div>
+        </div>
+      </section>
 
+      <section class="section">
+        <div class="container mt-4 px-5">
+          <div class="row m-5 align-items-center">
             <div class="row mb-5">
-              <h3 style="background-color: #bde3ff">Check</h3>
+              <h3
+                class="px-3 py-2"
+                style="background-color: #bde3ff; border-radius: 10px"
+              >
+                Check
+              </h3>
             </div>
+
             <div class="row mb-5 align-items-center">
               <h5>Launch and Post-Release Analysis</h5>
               <p>
@@ -422,18 +505,17 @@
                 version validated our roadmap and aligned with our future plans
                 for platform expansion.
               </p>
-              <img
+              <!--               <img
                 src="assets/img/leetcardIA.png"
+                alt="Image"
+                class="img-fluid"
+              /> -->
+              <img
+                src="assets/img/leetcardAnalytics.jpg"
                 alt="Image"
                 class="img-fluid"
               />
             </div>
-
-            <img
-              src="assets/img/leetcardAnalytics.jpg"
-              alt="Image"
-              class="img-fluid"
-            />
           </div>
         </div>
       </section>
