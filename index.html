@@ -123,29 +123,10 @@
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            <!-- Peace Tank -->
-            <div
-              id="PeaceTank-Box"
-              class="item dev col-sm-6 col-md-4 col-lg-4 mb-4"
-            >
-              <a href="peacetank.html" class="item-wrap fancybox">
-                <div class="work-info">
-                  <h3>Peace Tank</h3>
-                  <span>Website</span>
-                </div>
-                <img
-                  class="img-fluid"
-                  src="assets/img/img_10.png"
-                  alt="Peace Tank"
-                />
-              </a>
-              Web Development | Next.js
-            </div>
-
             <!-- LeetCard -->
             <div
               id="LeetCard-Box"
-              class="item ux col-sm-6 col-md-4 col-lg-4 mb-4"
+              class="item ux col-sm-6 col-md-4 col-lg-6 mb-4"
             >
               <a href="leetcard.html" class="item-wrap fancybox">
                 <div class="work-info inactive">
@@ -158,13 +139,19 @@
                   alt="LeetCard"
                 />
               </a>
-              UX/UI Design | Design System
+              <h4 class="mt-3">LeetCard</h4>
+              <p>Streamlining the Leetcode Grind for Software Engineers</p>
+              <div>
+                <span class="badge text-bg-primary">Product Design</span>
+                <span class="badge text-bg-primary">UI Design</span>
+                <span class="badge text-bg-primary">Design System</span>
+              </div>
             </div>
 
             <!-- MonsterDex -->
             <div
               id="Monster-Dex-Box"
-              class="item ux col-sm-6 col-md-4 col-lg-4 mb-4"
+              class="item ux col-sm-6 col-md-4 col-lg-6 mb-4"
             >
               <a href="monsterdex.html" class="item-wrap fancybox">
                 <div class="work-info">
@@ -177,7 +164,12 @@
                   alt="MonsterDex"
                 />
               </a>
-              UX/UI Design
+              <h4 class="mt-3">MonsterDex</h4>
+              <p>Enhancing Gameplay, Eliminating Hassle</p>
+              <div>
+                <span class="badge text-bg-primary">Product Design</span>
+                <span class="badge text-bg-primary">UI Design</span>
+              </div>
             </div>
           </div>
         </div>
@@ -199,10 +191,28 @@
             data-aos="fade-up"
             data-aos-delay="200"
           >
+            <!-- Peace Tank -->
+            <div
+              id="PeaceTank-Box"
+              class="item dev col-sm-4 col-md-4 col-lg-4 mb-4"
+            >
+              <a href="peacetank.html" class="item-wrap fancybox">
+                <div class="work-info">
+                  <h3>Peace Tank</h3>
+                  <span>Website</span>
+                </div>
+                <img
+                  class="img-fluid"
+                  src="assets/img/img_10.png"
+                  alt="Peace Tank"
+                />
+              </a>
+              Web Development | Next.js
+            </div>
             <!-- Liquid Cat -->
             <div
               id="Liquid-Cat-Box"
-              class="item game ux col-sm-4 col-md-3 col-lg-3 mb-4"
+              class="item game ux col-sm-4 col-md-4 col-lg-4 mb-4"
             >
               <a href="javascript:void(0)">
                 <div
@@ -258,7 +268,7 @@
             <!-- Logitech -->
             <div
               id="Logitech-Box"
-              class="item research col-sm-4 col-md-3 col-lg-3 mb-4"
+              class="item research col-sm-4 col-md-4 col-lg-4 mb-4"
             >
               <a href="javascript:void(0)">
                 <div
@@ -337,7 +347,7 @@
             <!-- Half Byte -->
             <div
               id="Half-Byte-Box"
-              class="item game col-sm-4 col-md-3 col-lg-3 mb-4"
+              class="item game col-sm-4 col-md-4 col-lg-4 mb-4"
             >
               <a href="halfbyte.html" class="item-wrap fancybox">
                 <div class="work-info">
@@ -356,7 +366,7 @@
             <!-- LikeeXDownloader -->
             <div
               id="LikeeXD-Box"
-              class="item ux col-sm-4 col-md-3 col-lg-3 mb-4"
+              class="item ux col-sm-4 col-md-4 col-lg-4 mb-4"
             >
               <a href="likeexdownloader.html" class="item-wrap fancybox">
                 <div class="work-info">
@@ -763,24 +773,27 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
 
-  <!-- Google Analytics Event Listeners -->
-  <script>
-    document.getElementById("Logitech-Box").addEventListener("click", function() {
-        gtag('event', 'logitech_button_click', {
-            'event_category': 'Button',
-            'event_label': 'Logitech Headset',
-            'value': 1
+    <!-- Google Analytics Event Listeners -->
+    <script>
+      document
+        .getElementById("Logitech-Box")
+        .addEventListener("click", function () {
+          gtag("event", "logitech_button_click", {
+            event_category: "Button",
+            event_label: "Logitech Headset",
+            value: 1,
+          });
         });
-    });
 
-    document.getElementById("Liquid-Cat-Box").addEventListener("click", function() {
-        gtag('event', 'cat_button_click', {
-            'event_category': 'Button',
-            'event_label': 'Liquid Cat Game',
-            'value': 1
+      document
+        .getElementById("Liquid-Cat-Box")
+        .addEventListener("click", function () {
+          gtag("event", "cat_button_click", {
+            event_category: "Button",
+            event_label: "Liquid Cat Game",
+            value: 1,
+          });
         });
-    });
-</script>
-</body>
-
+    </script>
+  </body>
 </html>
