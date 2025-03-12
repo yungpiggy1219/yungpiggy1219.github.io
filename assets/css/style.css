@@ -1,14 +1,10 @@
-/**
-* Template Name: MyPortfolio
-* Updated: Sep 18 2023 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+.testingBoarder {
+  border: 1px solid red;
+}
+
 body {
   font-family: "Inconsolata", monospace;
   color: #0d1e2d;
@@ -16,6 +12,11 @@ body {
 
 p {
   font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 500;
+  color: #767676;
+  margin-bottom: 25px;
 }
 
 li {
@@ -42,37 +43,55 @@ h6,
   font-family: "Raleway", sans-serif;
 }
 
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #1c1c1c;
+}
+
 h2 {
-  font-size: 28px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1c1c1c;
+  margin-bottom: 25px;
 }
 
 h3 {
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 35px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1c1c1c;
 }
 
 h4 {
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 500;
+  color: #767676;
 }
 
 h5 {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
+  color: #767676;
 }
 
-h6 {
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin-bottom: 35px;
+.textContainer {
+  padding-left: 180px;
+  padding-right: 180px;
+}
+
+.smallCaps {
+  font-variant: small-caps;
+}
+
+.accentTitle {
   color: #ff007a;
+  font-variant: small-caps;
 }
 
 .section {
-  padding: 7rem 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .aboutImage {
