@@ -70,14 +70,6 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
-
-    <!-- =======================================================
-  * Template Name: MyPortfolio
-  * Updated: Sep 18 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
   </head>
 
   <body>
@@ -95,25 +87,25 @@
         <div class="container">
           <div class="row mb-5 align-items-center">
             <div class="col-md-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
-              <h2>
+              <h1>
                 Hello, <br />
                 my name is YungChu, <br />
                 and I'm a UX engineer.
-              </h2>
-              <p class="mb-0">based in the US</p>
+              </h1>
+              <h4>based in the US</h4>
             </div>
             <div
               class="col-md-12 col-lg-6 text-start text-lg-end"
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              <div id="filters" class="filters">
+              <!-- <div id="filters" class="filters">
                 <a href="#" data-filter="*" class="active">All</a>
                 <a href="#" data-filter=".ux">UX/UI</a>
-                <a href="#" data-filter=".dev">Dev</a>
-                <!-- <a href="#" data-filter=".game">Game</a> -->
-                <!-- <a href="#" data-filter=".other">Other</a> -->
-              </div>
+                <a href="#" data-filter=".dev">Dev</a> -->
+              <!-- <a href="#" data-filter=".game">Game</a> -->
+              <!-- <a href="#" data-filter=".other">Other</a> -->
+              <!-- </div> -->
             </div>
           </div>
 
@@ -121,35 +113,16 @@
             id="portfolio-grid"
             class="row no-gutter"
             data-aos="fade-up"
-            data-aos-delay="200"
+            data-aos-delay="500"
           >
-            <!-- Peace Tank -->
-            <div
-              id="PeaceTank-Box"
-              class="item dev col-sm-6 col-md-4 col-lg-4 mb-4"
-            >
-              <a href="peacetank.html" class="item-wrap fancybox">
-                <div class="work-info">
-                  <h3>Peace Tank</h3>
-                  <span>Website</span>
-                </div>
-                <img
-                  class="img-fluid"
-                  src="assets/img/img_10.png"
-                  alt="Peace Tank"
-                />
-              </a>
-              Web Development | Next.js
-            </div>
-
             <!-- LeetCard -->
             <div
               id="LeetCard-Box"
-              class="item ux col-sm-6 col-md-4 col-lg-4 mb-4"
+              class="item ux col-sm-6 col-md-4 col-lg-6 mb-4"
             >
               <a href="leetcard.html" class="item-wrap fancybox">
                 <div class="work-info inactive">
-                  <h3>LeetCard</h3>
+                  <h1 style="color: #ffffff">LeetCard</h1>
                   <span>Mobile App</span>
                 </div>
                 <img
@@ -158,17 +131,23 @@
                   alt="LeetCard"
                 />
               </a>
-              UX/UI Design | Design System
+              <h2 class="mt-3 mb-2">LeetCard</h2>
+              <h4>Streamlining the Leetcode Grind for Software Engineers</h4>
+              <div>
+                <span class="badge text-bg-primary">Product Design</span>
+                <span class="badge text-bg-primary">UI Design</span>
+                <span class="badge text-bg-primary">Design System</span>
+              </div>
             </div>
 
             <!-- MonsterDex -->
             <div
               id="Monster-Dex-Box"
-              class="item ux col-sm-6 col-md-4 col-lg-4 mb-4"
+              class="item ux col-sm-6 col-md-4 col-lg-6 mb-4"
             >
               <a href="monsterdex.html" class="item-wrap fancybox">
                 <div class="work-info">
-                  <h3>MonsterDex</h3>
+                  <h1 style="color: #ffffff">MonsterDex</h1>
                   <span>iOS App</span>
                 </div>
                 <img
@@ -177,7 +156,12 @@
                   alt="MonsterDex"
                 />
               </a>
-              UX/UI Design
+              <h2 class="mt-3 mb-2">MonsterDex</h2>
+              <h4>Enhancing Gameplay, Eliminating Hassle</h4>
+              <div>
+                <span class="badge text-bg-primary">Product Design</span>
+                <span class="badge text-bg-primary">UI Design</span>
+              </div>
             </div>
           </div>
         </div>
@@ -188,8 +172,12 @@
       <section class="section other-portfolio">
         <div class="container">
           <div class="row mb-5 align-items-center">
-            <div class="col-md-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
-              <h5>Other works</h5>
+            <div
+              class="col-md-12 col-lg-6 mb-4 mb-lg-0"
+              data-aos="fade-up"
+              data-aos-delay="1000"
+            >
+              <h2>Other works</h2>
             </div>
           </div>
 
@@ -199,10 +187,28 @@
             data-aos="fade-up"
             data-aos-delay="200"
           >
+            <!-- Peace Tank -->
+            <div
+              id="PeaceTank-Box"
+              class="item dev col-sm-4 col-md-4 col-lg-4 mb-4"
+            >
+              <a href="peacetank.html" class="item-wrap fancybox">
+                <div class="work-info">
+                  <h1>Peace Tank</h1>
+                  <span>Website</span>
+                </div>
+                <img
+                  class="img-fluid"
+                  src="assets/img/img_10.png"
+                  alt="Peace Tank"
+                />
+              </a>
+              Web Development | Next.js
+            </div>
             <!-- Liquid Cat -->
             <div
               id="Liquid-Cat-Box"
-              class="item game ux col-sm-4 col-md-3 col-lg-3 mb-4"
+              class="item game ux col-sm-4 col-md-4 col-lg-4 mb-4"
             >
               <a href="javascript:void(0)">
                 <div
@@ -212,7 +218,7 @@
                   class="item-wrap fancybox"
                 >
                   <div class="work-info inactive">
-                    <h3>Coming Soon</h3>
+                    <h1>Coming Soon</h1>
                     <span>Mobile Game</span>
                   </div>
                   <img
@@ -258,7 +264,7 @@
             <!-- Logitech -->
             <div
               id="Logitech-Box"
-              class="item research col-sm-4 col-md-3 col-lg-3 mb-4"
+              class="item research col-sm-4 col-md-4 col-lg-4 mb-4"
             >
               <a href="javascript:void(0)">
                 <div
@@ -268,7 +274,7 @@
                   class="item-wrap fancybox"
                 >
                   <div class="work-info inactive">
-                    <h3>Logitech</h3>
+                    <h1>Logitech</h1>
                     <span>Gaming Headset</span>
                   </div>
                   <img
@@ -337,11 +343,11 @@
             <!-- Half Byte -->
             <div
               id="Half-Byte-Box"
-              class="item game col-sm-4 col-md-3 col-lg-3 mb-4"
+              class="item game col-sm-4 col-md-4 col-lg-4 mb-4"
             >
               <a href="halfbyte.html" class="item-wrap fancybox">
                 <div class="work-info">
-                  <h3>Half Byte</h3>
+                  <h1>Half Byte</h1>
                   <span>Board Game</span>
                 </div>
                 <img
@@ -356,11 +362,11 @@
             <!-- LikeeXDownloader -->
             <div
               id="LikeeXD-Box"
-              class="item ux col-sm-4 col-md-3 col-lg-3 mb-4"
+              class="item ux col-sm-4 col-md-4 col-lg-4 mb-4"
             >
               <a href="likeexdownloader.html" class="item-wrap fancybox">
                 <div class="work-info">
-                  <h5>Likee XDownloader</h5>
+                  <h1>Likee XDownloader</h1>
                   <span>Android App</span>
                 </div>
                 <img
@@ -377,7 +383,7 @@
       <!-- End  Other Works Section -->
 
       <!-- ======= Article Section ======= -->
-      <section class="section services">
+      <section class="section services" data-aos="fade-right">
         <div class="container">
           <div class="row justify-content-center text-center mb-4">
             <div class="col-5">
@@ -391,10 +397,10 @@
                 class="list-group-item list-group-item-action"
               >
                 <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">
+                  <h3 class="mb-1">
                     👉🏻 Documentation of Travel Experience: The Impact of
                     Technology on Capturing Travel Memories
-                  </h5>
+                  </h3>
                   <small class="text-body-secondary">May 2024</small>
                 </div>
                 <p class="mb-1">Iowa State University</p>
@@ -414,10 +420,10 @@
                 class="list-group-item list-group-item-action"
               >
                 <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">
+                  <h3 class="mb-1">
                     👉🏻 Exploring the Therapeutic Landscape: Video Games and
                     Memory Enhancement in Alzheimer's Disease
-                  </h5>
+                  </h3>
                   <small class="text-body-secondary">Dec 2023</small>
                 </div>
                 <p class="mb-1">Iowa State University</p>
@@ -439,7 +445,7 @@
       <!-- End Article Section -->
 
       <!-- ======= About Section ======= -->
-      <section class="section">
+      <section class="section" data-aos="fade-left">
         <div class="container">
           <div
             class="row justify-content-center text-center mb-4 align-items-center"
@@ -472,7 +478,7 @@
       <!-- End About Section -->
 
       <!-- ======= Experiences Section ======= -->
-      <section class="section services">
+      <section class="section services" data-aos="fade-right">
         <div class="container">
           <div class="row justify-content-center text-center mb-4">
             <div class="col-5">
@@ -484,7 +490,25 @@
             <div class="list-group list-group-flush">
               <a class="list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">Human Factors Engineer</h5>
+                  <h3 class="mb-1">Product Designer</h3>
+                  <small class="text-body-secondary">Jan 2024 - Present</small>
+                </div>
+                <p class="mb-1">Kubicle</p>
+                <small class="text-body-secondary">
+                  <div>
+                    <span class="badge text-bg-primary">UX/UI Design</span>
+                    <span class="badge text-bg-primary">User Research</span>
+                    <span class="badge text-bg-primary">Market Research</span>
+                    <span class="badge text-bg-primary"
+                      >Software Development</span
+                    >
+                  </div>
+                </small>
+              </a>
+
+              <a class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                  <h3 class="mb-1">Human Factors Engineer</h3>
                   <small class="text-body-secondary"
                     >Jan 2023 - February 2024</small
                   >
@@ -506,7 +530,7 @@
 
               <a class="list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">UX Researcher</h5>
+                  <h3 class="mb-1">UX Researcher</h3>
                   <small class="text-body-secondary">Jun 2021 - Dec 2022</small>
                 </div>
                 <p class="mb-1">Logitech</p>
@@ -529,7 +553,7 @@
 
               <a class="list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">UX Research Intern</h5>
+                  <h3 class="mb-1">UX Research Intern</h3>
                   <small class="text-body-secondary">Mar 2021 - Jun 2021</small>
                 </div>
                 <p class="mb-1">Logitech</p>
@@ -544,7 +568,7 @@
 
               <a class="list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">Front-End Developer</h5>
+                  <h3 class="mb-1">Front-End Developer</h3>
                   <small class="text-body-secondary">Dec 2020 - Mar 2021</small>
                 </div>
                 <p class="mb-1">Appcela</p>
@@ -563,7 +587,7 @@
 
               <a class="list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">Project Manager (part-time)</h5>
+                  <h3 class="mb-1">Project Manager</h3>
                   <small class="text-body-secondary">Aug 2020 - Dec 2020</small>
                 </div>
                 <p class="mb-1">iiNumbers</p>
@@ -573,7 +597,7 @@
                       >Requirements Elicitation</span
                     >
                     <span class="badge text-bg-primary">Scheduling</span>
-                    <span class="badge text-bg-primary">UX/UI Design</span>
+                    <span class="badge text-bg-primary">Software Design</span>
                     <span class="badge text-bg-primary"
                       >WordPress Development</span
                     >
@@ -583,13 +607,15 @@
 
               <a class="list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">Front-End Designer</h5>
+                  <h3 class="mb-1">Front-End Designer</h3>
                   <small class="text-body-secondary">May 2020 - Aug 2020</small>
                 </div>
                 <p class="mb-1">Foresee Innovation</p>
                 <small class="text-body-secondary">
                   <div>
-                    <span class="badge text-bg-primary">UX/UI Design</span>
+                    <span class="badge text-bg-primary"
+                      >Android App Design</span
+                    >
                     <span class="badge text-bg-primary"
                       >Front-End Development</span
                     >
@@ -605,7 +631,7 @@
       <!-- End Experiences Section -->
 
       <!-- ======= Skills Section ======= -->
-      <section class="section services">
+      <section class="section services" data-aos="fade-left">
         <div class="container">
           <div class="row justify-content-center text-center mb-4">
             <div class="col-5">
@@ -669,7 +695,7 @@
       <!-- End Skills Section -->
 
       <!-- ======= Education Section ======= -->
-      <section class="section services">
+      <section class="section services" data-aos="fade-right">
         <div class="container">
           <div class="row justify-content-center text-center mb-4">
             <div class="col-5">
@@ -722,16 +748,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-6">
-            <p class="mb-1">👾 2024 ©️ Made with ❤️ by Yung-Chu Chuang 🥰</p>
-            <div class="credits">
-              <!--
-            All the links in the footer should remain intact.
-            You can delete the links only if you purchased the pro version.
-            Licensing information: https://bootstrapmade.com/license/
-            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=MyPortfolio
-          -->
-              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-            </div>
+            <p class="mb-1">👾 2025 ©️ Made with ❤️ by Yung-Chu Chuang 🥰</p>
           </div>
           <div class="col-sm-6 social text-md-end">
             <a href="https://github.com/yungpiggy1219" target="_blank"
@@ -763,24 +780,27 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
 
-  <!-- Google Analytics Event Listeners -->
-  <script>
-    document.getElementById("Logitech-Box").addEventListener("click", function() {
-        gtag('event', 'logitech_button_click', {
-            'event_category': 'Button',
-            'event_label': 'Logitech Headset',
-            'value': 1
+    <!-- Google Analytics Event Listeners -->
+    <script>
+      document
+        .getElementById("Logitech-Box")
+        .addEventListener("click", function () {
+          gtag("event", "logitech_button_click", {
+            event_category: "Button",
+            event_label: "Logitech Headset",
+            value: 1,
+          });
         });
-    });
 
-    document.getElementById("Liquid-Cat-Box").addEventListener("click", function() {
-        gtag('event', 'cat_button_click', {
-            'event_category': 'Button',
-            'event_label': 'Liquid Cat Game',
-            'value': 1
+      document
+        .getElementById("Liquid-Cat-Box")
+        .addEventListener("click", function () {
+          gtag("event", "cat_button_click", {
+            event_category: "Button",
+            event_label: "Liquid Cat Game",
+            value: 1,
+          });
         });
-    });
-</script>
-</body>
-
+    </script>
+  </body>
 </html>
